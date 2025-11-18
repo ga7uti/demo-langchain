@@ -1,0 +1,18 @@
+Problem: the import path is misspelled and/or the package isn't installed. The line has "langchain_communnity" (double n) which is wrong — and modern LangChain exposes TextLoader under langchain.document_loaders.
+
+Fix (edit the active file):
+
+If you actually meant a community package, either install the correct package or use the correct module name. Common commands:
+
+Install LangChain (recommended):
+
+pip install -U langchain
+If you need a community contrib package (check exact name on PyPI):
+
+pip install langchain-community
+Troubleshooting tips
+
+Make sure you installed into the same Python interpreter VS Code is using (select interpreter: Ctrl+Shift+P → Python: Select Interpreter).
+Verify installation in the integrated terminal:
+python -c "import langchain; print(langchain.version)"
+Reload the VS Code Python language server / window if imports still show as unresolved.
