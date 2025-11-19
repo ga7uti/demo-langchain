@@ -8,7 +8,7 @@ from langsmith import uuid7
 load_dotenv()
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
+os.environ["LANGCHAIN_PROJECT"] = "Chatbot Demo"
 os.environ["LANGSMITH_TRACING_V2"] = "true"
 
 id = uuid7()
