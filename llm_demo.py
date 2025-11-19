@@ -9,7 +9,7 @@ load_dotenv()
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
-os.environ["LANGSMITH_TRACING"] = "true"
+os.environ["LANGSMITH_TRACING_V2"] = "true"
 
 id = uuid7()
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
