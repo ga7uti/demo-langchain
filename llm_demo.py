@@ -18,7 +18,7 @@ llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 # print(result.content)
 
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are an expert AI engineer.Provide me answers to my questions accurately and concisely."),
+    ("system", "You are an expert AI engineer. Provide me answers to my questions accurately and concisely."),
     ("user", "${question}")
 ])
 
